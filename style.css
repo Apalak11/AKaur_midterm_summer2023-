@@ -1,0 +1,87 @@
+/* element selector */
+h1 {
+    text-align: center;
+    color: rgb(31, 17, 222);
+}
+
+/* id selector */
+#mainheading {
+    font-size: 50px;
+    color: rgb(34, 222, 20);
+}
+
+/* Pseudo-selectors  */
+
+p:first-of-type::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(107, 107, 226);
+}
+
+/* Set the font-family of all headings */
+h1,
+h2,
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Set the text size of all paragraph and table text to teh equivalent of 18px using a relative unit. */
+p,
+table {
+    font-size: 1.125em;
+}
+
+/* Set the div.wrapper to 80% of the viewport width using a flexible and relative unit. Centre the div in the middle of the page */
+div.wrapper {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* Choose a background color and apply to div.wrapper */
+    background-color: #b7b4b4;
+}
+
+/* Add 2ems of padding to the top of the article and 3ems of padding to the left and right */
+article {
+    padding-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/* Make the image responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Set the background of the footer to #333 and color to #FFF. Adding padding of 3em to the top, bottom and left of the footer. Make the footer 'sticky' (always at the bottom of the viewport). */
+footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 3em 3em 3em 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Style the table according to best practices. */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 0.5em;
+    text-align: left;
+    border: 1px solid #ee3f3f;
+}
+
+table th {
+    background-color: #bdd013;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #c1391a85;
+}
